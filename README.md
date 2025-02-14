@@ -43,6 +43,8 @@ There are 6 docker images you need for this laboratory. Those are:
     [docker-images](https://github.com/jorgelopezcoronado/SDNLab/tree/master/docker-images)
     found in this repository. You can download via http or git. Change
     to that directory (`cd docker-images`).
+    Note: If the downloaded images are not compatible with your system, you can 
+    modify the relevant Dockerfile in the SDNLab/docker-images directory to adapt them.
 
 3.  A modified wordpress image (referred as h2), to get it, execute:
 
@@ -167,8 +169,10 @@ your Onos controller via:
 Once logged in, execute the Onos Command Line Interface (CLI) or client
 console by executing:
 
-            ./apache-karaf-4.2.8/bin/client
-        
+            ./apache-karaf-4.2.14/bin/client
+Note: Since Karaf versions may change over time, it is recommended to use the path corresponding 
+to the Karaf version installed on your system instead of ./apache-karaf-4.2.14/bin/client. 
+(You can check your Karaf version by listing the files with the ls command.)     
 
 Inside the Onos console you can check many things, however, for the
 moment as there are no connected devices there are few interesting
